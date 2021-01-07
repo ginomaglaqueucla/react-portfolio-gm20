@@ -7,6 +7,9 @@ function Navigation(props) {
         contactSelected,
         currentCategory,
         setContactSelected,
+        sections = [],
+        setCurrentSection,
+        currentSection
     } = props;
 
     return (
@@ -25,18 +28,21 @@ function Navigation(props) {
                 <li className={`mx-2 ${contactSelected && 'navActive'}`}>
                     <span onClick={() => setContactSelected(true)}>Contact</span>
                 </li>
-                {categories.map((category) => (
+                {sections.map((section) => (
                     <li
-                        className={`mx-1 ${
-                            currentCategory.name === category.name && !contactSelected && 'navActive'
-                        }`}
-                    key={category.name}
+                        className={`mx-1
+                            ${
+                                currentSection.name === sections.name && !contactSelected && 'navActive'
+                            }
+                        `}
+                    key={sections}
                     >
-                        <span onClick={() => {setCurrentCategory(category);
-                                              setContactSelected(false);
+                        <span onClick={() => {
+                                              setCurrentSection(section);
+                                              console.log(section);
                                              }}
                         >
-                            {category.name}
+                            {section.name}
                         </span>
                     </li>
                 ))}

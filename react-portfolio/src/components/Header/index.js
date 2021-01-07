@@ -8,6 +8,9 @@ function Header(props) {
         contactSelected,
         currentCategory,
         setContactSelected,
+        sections = [],
+        setCurrentSection,
+        currentSection
     } = props;
     return (
       <header className="flex-row px-2">
@@ -22,6 +25,9 @@ function Header(props) {
                 currentCategory={currentCategory}
                 contactSelected={contactSelected}
                 setContactSelected={setContactSelected}
+                sections={sections}
+                setCurrentSection={setCurrentSection}
+                currentSection={currentSection}
             ></Navigation>
       </header>
     );

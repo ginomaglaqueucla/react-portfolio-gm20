@@ -8,6 +8,18 @@ import Portfolio from './components/Portfolio';
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
+  const [sections] = useState([
+    {
+      name: 'portfolio'
+    },
+    {
+      name: 'resume'
+    },
+    {
+      name: 'contact'
+    }
+
+  ]);
   const [categories] = useState([
     {
       name: 'commercial',
@@ -18,6 +30,7 @@ function App() {
     { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
   ]);
 
+  const [currentSection, setCurrentSection] = useState(sections[0]);
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
@@ -28,9 +41,12 @@ function App() {
         currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
+        sections={sections}
+        setCurrentSection={setCurrentSection}
+        currentSection={currentSection}
       ></Header>
       <main>
-        {!contactSelected ? (
+        {!(currentCategory.name === 'landscape') ? (
           <>
             {/* <Gallery currentCategory={currentCategory}></Gallery> */}
             <About></About>
