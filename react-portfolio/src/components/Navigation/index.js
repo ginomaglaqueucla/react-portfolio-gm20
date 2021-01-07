@@ -2,11 +2,11 @@ import React from 'react';
 
 function Navigation(props) {
     const {
-        categories = [],
-        setCurrentCategory,
-        contactSelected,
-        currentCategory,
-        setContactSelected,
+        // categories = [],
+        // setCurrentCategory,
+        // contactSelected,
+        // currentCategory,
+        // setContactSelected,
         sections = [],
         setCurrentSection,
         currentSection
@@ -15,24 +15,24 @@ function Navigation(props) {
     return (
         <nav>
             <ul className="flex-row">
-                <li className="mx-2">
+                {/* <li className="mx-2">
                     <a href="#about" onClick={() => setContactSelected(false)}>
                         About
                     </a> 
-                </li>
-                <li className="mx-2">
+                </li> */}
+                {/* <li className="mx-2">
                     <a href="#portfolio" onClick={() => setContactSelected(false)}>
                         Portfolio
                     </a> 
-                </li>
-                <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+                </li> */}
+                {/* <li className={`mx-2 ${contactSelected && 'navActive'}`}>
                     <span onClick={() => setContactSelected(true)}>Contact</span>
-                </li>
+                </li> */}
                 {sections.map((section) => (
                     <li
                         className={`mx-1
                             ${
-                                currentSection.name === sections.name && !contactSelected && 'navActive'
+                                currentSection.name === sections.name && 'navActive'
                             }
                         `}
                     key={sections}

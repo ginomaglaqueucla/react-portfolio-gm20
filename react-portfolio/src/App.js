@@ -5,10 +5,14 @@ import Header from './components/Header'
 import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
+  // const [contactSelected, setContactSelected] = useState(false);
   const [sections] = useState([
+    {
+      name: 'about'
+    },
     {
       name: 'portfolio'
     },
@@ -20,41 +24,45 @@ function App() {
     }
 
   ]);
-  const [categories] = useState([
-    {
-      name: 'commercial',
-      description: 'Photos of grocery stores, food trucks, and other commercial projects',
-    },
-    { name: 'portraits', description: 'Portraits of people in my life' },
-    { name: 'food', description: 'Delicious delicacies' },
-    { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
-  ]);
+  // const [categories] = useState([
+  //   {
+  //     name: 'commercial',
+  //     description: 'Photos of grocery stores, food trucks, and other commercial projects',
+  //   },
+  //   { name: 'portraits', description: 'Portraits of people in my life' },
+  //   { name: 'food', description: 'Delicious delicacies' },
+  //   { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
+  // ]);
 
   const [currentSection, setCurrentSection] = useState(sections[0]);
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  // const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
     <div>
       <Header
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
+        // categories={categories}
+        // setCurrentCategory={setCurrentCategory}
+        // currentCategory={currentCategory}
+        // contactSelected={contactSelected}
+        // setContactSelected={setContactSelected}
         sections={sections}
         setCurrentSection={setCurrentSection}
         currentSection={currentSection}
       ></Header>
       <main>
-        {!(currentCategory.name === 'landscape') ? (
+        {(currentSection.name === 'contact') ? (
           <>
             {/* <Gallery currentCategory={currentCategory}></Gallery> */}
-            <About></About>
-            <Portfolio></Portfolio>
+            <Contact></Contact>
+            {/* <Portfolio></Portfolio> */}
 
           </>
-        ) : (
-            <Contact></Contact>
+        ) : (currentSection.name === 'resume')?(
+          <Resume></Resume>
+        ) : (currentSection.name === 'portfolio')?(
+          <Portfolio></Portfolio>
+        ): (
+            <About></About>
           )}
       </main>
     </div>
