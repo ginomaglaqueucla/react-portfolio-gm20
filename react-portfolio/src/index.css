@@ -93,6 +93,9 @@ a:hover {
 
 header {
   background: var(--dark);
+  /* padding: 25px; */
+  background: url('./assets/headerimg.jpg');
+  background-size: cover;
 }
 
 header a {
