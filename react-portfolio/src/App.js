@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header'
 import About from './components/About';
+import Contact from './components/Contact';
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
@@ -28,7 +29,14 @@ function App() {
         setContactSelected={setContactSelected}
       ></Header>
       <main>
-        <About></About>
+        {!contactSelected ? (
+          <>
+            {/* <Gallery currentCategory={currentCategory}></Gallery> */}
+            <About></About>
+          </>
+        ) : (
+            <Contact></Contact>
+          )}
       </main>
     </div>
   );
