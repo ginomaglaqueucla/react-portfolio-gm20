@@ -17,6 +17,11 @@ function Navigation(props) {
                         About
                     </a> 
                 </li>
+                <li className="mx-2">
+                    <a href="#portfolio" onClick={() => setContactSelected(false)}>
+                        Portfolio
+                    </a> 
+                </li>
                 <li className={`mx-2 ${contactSelected && 'navActive'}`}>
                     <span onClick={() => setContactSelected(true)}>Contact</span>
                 </li>

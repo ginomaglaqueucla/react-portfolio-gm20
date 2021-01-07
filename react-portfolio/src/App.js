@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header'
 import About from './components/About';
 import Contact from './components/Contact';
+import Portfolio from './components/Portfolio';
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
@@ -33,6 +34,8 @@ function App() {
           <>
             {/* <Gallery currentCategory={currentCategory}></Gallery> */}
             <About></About>
+            <Portfolio></Portfolio>
+
           </>
         ) : (
             <Contact></Contact>
