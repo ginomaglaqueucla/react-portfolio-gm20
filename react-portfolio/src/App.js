@@ -6,6 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 
 function App() {
   // const [contactSelected, setContactSelected] = useState(false);
@@ -52,17 +53,24 @@ function App() {
       <main>
         {(currentSection.name === 'contact') ? (
           <>
-            {/* <Gallery currentCategory={currentCategory}></Gallery> */}
             <Contact></Contact>
-            {/* <Portfolio></Portfolio> */}
-
+            <Footer></Footer>
           </>
-        ) : (currentSection.name === 'resume')?(
-          <Resume></Resume>
-        ) : (currentSection.name === 'portfolio')?(
-          <Portfolio></Portfolio>
-        ): (
+        ):(currentSection.name === 'resume')?(
+          <>
+            <Resume></Resume>
+            <Footer></Footer>
+          </>
+        ):(currentSection.name === 'portfolio')?(
+          <>
+            <Portfolio></Portfolio>
+            <Footer></Footer>
+          </>
+        ):(
+          <>
             <About></About>
+            <Footer></Footer>
+          </>
           )}
       </main>
     </div>
