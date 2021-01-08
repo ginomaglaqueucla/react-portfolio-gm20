@@ -2,11 +2,6 @@ import React from 'react';
 
 function Navigation(props) {
     const {
-        // categories = [],
-        // setCurrentCategory,
-        // contactSelected,
-        // currentCategory,
-        // setContactSelected,
         sections = [],
         setCurrentSection,
         currentSection
@@ -37,13 +32,13 @@ function Navigation(props) {
                         `}
                     key={sections}
                     >
-                        <span onClick={() => {
+                        <a href={`#${currentSection.name}`} onClick={() => {
                                               setCurrentSection(section);
                                               console.log(section);
                                              }}
                         >
                             {section.name}
-                        </span>
+                        </a>
                     </li>
                 ))}
             </ul>

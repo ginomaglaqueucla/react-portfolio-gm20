@@ -36,11 +36,6 @@ function Portfolio() {
         projLink='https://www.youtube.com/'
         projGithub='https://www.youtube.com/watch?v=GzL4D47GURc'
         />
-      {/* <Project></Project>
-      <Project></Project>
-      <Project></Project>
-      <Project></Project>
-      <Project></Project> */}
     </section>
   );
 }
