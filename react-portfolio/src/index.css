@@ -213,6 +213,11 @@ textarea {
   margin-bottom: var(--spacing-five);
 }
 
+/* .my-8 {
+  margin-top: var(--spacing-);
+  margin-bottom: var(--spacing-eight);
+} */
+
 .px-1 {
   padding-right: var(--spacing-one);
   padding-left: var(--spacing-one);
@@ -296,3 +301,10 @@ a {
 .navActive {
   color: var(--secondary);
 }
+
+/* .proj-img {
+  height:auto;
+  position: relative;
+  display: block;
+  width: 40vw;
+} */
