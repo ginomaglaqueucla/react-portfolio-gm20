@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 
-
 function Project(props) {
-
     const [projects] = useState([
         {
             name: 'Photo Port'
@@ -29,7 +27,7 @@ function Project(props) {
             </a>
             <div className='proj-container'>
                 <a href={projGithub}>
-                    Github
+                    GITHUB
                 </a>
             </div>
         </div>
