@@ -19,20 +19,19 @@ function Project(props) {
     ]);
 
     const {name, projImage, projLink, projGithub} = props;
-    console.log(projImage);
+    // console.log(projImage);
     const [currentProject, setCurrentProject] = useState();
 
     return (
         <div className="flex-row my-5">
-            <img src={require(`../../${projImage}`).default} className='proj-image'></img>
-                <div className='proj-container'>
-                    <a href={projLink}>
-                        {name}
-                    </a>
-                    <a href={projGithub}>
-                        Github
-                    </a>
-                </div>
+            <a href={projLink}>
+                <img src={require(`../../${projImage}`).default} className='proj-image'></img>
+            </a>
+            <div className='proj-container'>
+                <a href={projGithub}>
+                    Github
+                </a>
+            </div>
         </div>
         
     );
