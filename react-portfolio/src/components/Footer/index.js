@@ -5,7 +5,7 @@ function Footer() {
     <footer>
         <ul>
             <li>
-                <a href='https://drive.google.com/file/d/1Y5RPY1ghopVbxfRkAkqpsLjIzMFF8TRl/view?usp=sharing'>
+                <a href='https://github.com/ginomaglaqueucla/react-portfolio-gm20.git'>
                    MY GITHUB
                 </a>
             </li>

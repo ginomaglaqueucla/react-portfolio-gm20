@@ -5,7 +5,7 @@ function Resume() {
     return (
         <section id='resume' className="my-3">
             <h1 id="resume">
-                <a href='https://www.youtube.com/'>
+                <a href='https://drive.google.com/file/d/1Y5RPY1ghopVbxfRkAkqpsLjIzMFF8TRl/view?usp=sharing'>
                     Resume
                 </a>
             </h1>

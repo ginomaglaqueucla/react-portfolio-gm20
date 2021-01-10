@@ -3,12 +3,6 @@ import Navigation from '../Navigation'
 
 function Header(props) {
     const {
-        // categories = [],
-        // setCurrentCategory,
-        // contactSelected,
-        // currentCategory,
-        // setContactSelected,
-        sections = [],
         setCurrentSection,
         currentSection
     } = props;
@@ -20,53 +14,31 @@ function Header(props) {
                 </a>
             </h2>
             <nav>
-            <ul className='flex-row'>
-            <Navigation
-                // categories={categories}
-                // setCurrentCategory={setCurrentCategory}
-                // currentCategory={currentCategory}
-                // contactSelected={contactSelected}
-                // setContactSelected={setContactSelected}
-                section='about'
-                setCurrentSection={setCurrentSection}
-                currentSection={currentSection}
-            ></Navigation>
-                        <Navigation
-                // categories={categories}
-                // setCurrentCategory={setCurrentCategory}
-                // currentCategory={currentCategory}
-                // contactSelected={contactSelected}
-                // setContactSelected={setContactSelected}
-                section='portfolio'
-                setCurrentSection={setCurrentSection}
-                currentSection={currentSection}
-            ></Navigation>
-                        <Navigation
-                // categories={categories}
-                // setCurrentCategory={setCurrentCategory}
-                // currentCategory={currentCategory}
-                // contactSelected={contactSelected}
-                // setContactSelected={setContactSelected}
-                section='resume'
-                setCurrentSection={setCurrentSection}
-                currentSection={currentSection}
-            ></Navigation>
-                        <Navigation
-                // categories={categories}
-                // setCurrentCategory={setCurrentCategory}
-                // currentCategory={currentCategory}
-                // contactSelected={contactSelected}
-                // setContactSelected={setContactSelected}
-                section='contact'
-                setCurrentSection={setCurrentSection}
-                currentSection={currentSection}
-            ></Navigation>
-            </ul>
+                <ul className='flex-row'>
+                    <Navigation
+                        section='about'
+                        setCurrentSection={setCurrentSection}
+                        currentSection={currentSection}
+                    />
+                    <Navigation
+                        section='portfolio'
+                        setCurrentSection={setCurrentSection}
+                        currentSection={currentSection}
+                    />
+                    <Navigation
+                        section='resume'
+                        setCurrentSection={setCurrentSection}
+                        currentSection={currentSection}
+                    />
+                    <Navigation
+                        section='contact'
+                        setCurrentSection={setCurrentSection}
+                        currentSection={currentSection}
+                    />
+                </ul>
             </nav>
-
-
       </header>
     );
 }
-  
+
 export default Header;
