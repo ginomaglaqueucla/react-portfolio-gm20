@@ -48,7 +48,7 @@ To contribute to this project:
 
 ## Test
 
-![Main Page](./assets/images/react-port.png)
+![Main Page](./src/assets/react-port.png)
 
 
 ## Questions
