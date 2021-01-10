@@ -9,7 +9,7 @@ function Header(props) {
     return (
       <header className="flex-row px-2">
             <h2>
-                <a href="/">
+                <a href="http://ginomaglaqueucla.github.io/react-portfolio-gm20">
                     Gino Maglaque
                 </a>
             </h2>

@@ -17,7 +17,7 @@ React Portfolio for Gino Franco Maglaque. This web application incorperates Reac
 2. Install packages (inquirer)
 
 ## Usage
-1. Navigate to url
+1. Navigate to (http://ginomaglaqueucla.github.io/react-portfolio-gm20)
 2. Click on each navigation section
 3. Navigate to deployed projects and/or GitHub repositories
 4. Navigate to Resume section, notice downloadable link
