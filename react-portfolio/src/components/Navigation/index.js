@@ -1,4 +1,5 @@
 import React from 'react';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Navigation(props) {
     const {
@@ -13,7 +14,7 @@ function Navigation(props) {
                                               setCurrentSection(section);
                                              }}
                         >
-                            {section}
+                            {capitalizeFirstLetter(section)}
                         </a>
             </li>
     );

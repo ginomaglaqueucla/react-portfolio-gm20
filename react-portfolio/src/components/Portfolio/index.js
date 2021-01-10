@@ -5,7 +5,7 @@ import Project from '../Project';
 function Portfolio() {
   return (
     <section className="my-5 portfolio">
-      <h1>Projects listed here</h1>
+      <h1>Portfolio</h1>
       <Project
         name='Get Hitched'
         projImage='assets/get-hitched.png'

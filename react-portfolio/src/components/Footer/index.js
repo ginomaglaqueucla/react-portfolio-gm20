@@ -6,7 +6,7 @@ function Footer() {
         <ul>
             <li>
                 <a href='https://github.com/ginomaglaqueucla/react-portfolio-gm20.git'>
-                   MY GITHUB
+                   My GitHub
                 </a>
             </li>
             <li>
