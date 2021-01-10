@@ -320,3 +320,8 @@ footer {
   align-items: center;
   bottom: 0
 }
+
+.gino-img {
+  height:300px;
+  width:auto;
+}
