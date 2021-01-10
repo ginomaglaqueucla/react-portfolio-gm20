@@ -4,8 +4,8 @@ import Project from '../Project';
 
 function Portfolio() {
   return (
-    <section className="my-5">
-      <h1 id="portfolio">Projects listed here</h1>
+    <section className="my-5 portfolio">
+      <h1>Projects listed here</h1>
       <Project
         name='Get Hitched'
         projImage='assets/get-hitched.png'

@@ -51,17 +51,17 @@ function App() {
         currentSection={currentSection}
       ></Header>
       <main>
-        {(currentSection.name === 'contact') ? (
+        {(currentSection === 'contact') ? (
           <>
             <Contact></Contact>
             <Footer></Footer>
           </>
-        ):(currentSection.name === 'resume')?(
+        ):(currentSection === 'resume')?(
           <>
             <Resume></Resume>
             <Footer></Footer>
           </>
-        ):(currentSection.name === 'portfolio')?(
+        ):(currentSection === 'portfolio')?(
           <>
             <Portfolio></Portfolio>
             <Footer></Footer>
