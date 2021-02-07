@@ -7,6 +7,12 @@ function Portfolio() {
     <section className="my-5 portfolio">
       <h1>Portfolio</h1>
       <Project
+        name='Color Theory'
+        projImage='assets/color-theory.png'
+        projLink='https://color-theory.herokuapp.com/'
+        projGithub='https://github.com/reynolkb/color-theory-1.0'
+      />
+      <Project
         name='Get Hitched'
         projImage='assets/get-hitched.png'
         projLink='https://sheltered-eyrie-92140.herokuapp.com/'
